@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel website</title>
+    <link rel="apple-touch-icon" sizes="152x152" href="./apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+<link rel="manifest" href="./site.webmanifest">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="mycss.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body >
+    <header class="header">
+        <a href="#" class="navlogo">Heritance</a>
+
+        <input type="checkbox" id="check">
+        <label for="check" class="icons">
+            <i class='bx bx-menu' id="menu-icon"></i>
+            <i class='bx bx-x' id="close-icon"></i>
+        </label>
+
+        <nav class="navbar">
+            
+        <a href="index.html" style="--i:0">Home</a>
+        <a href="Accomodation.html" style="--i:1">Accomodation</a>
+        <a href="Adventures.html" style="--i:2">restaurant</a>
+        <a href="Restuarants.html" style="--i:3">Adventures</a>
+        <a href="branches.html" style="--i:4">Branches</a>
+        <a href="booking.html" style="--i:5">Bookings</a>
+        
+        </nav>
+   
+    </header>
+      
+    <section class="reservation" id="reservation">
+
+        <form action="" method="post">
+           <h3>make a reservation</h3>
+           <div class="flex">
+              <div class="box">
+                 <p>check in <span>*</span></p>
+                 <input type="date" name="check_in" class="input" required>
+              </div>
+              <div class="box">
+                 <p>check out <span>*</span></p>
+                 <input type="date" name="check_out" class="input" required>
+              </div>
+              <div class="box">
+                 <p>adults <span>*</span></p>
+                 <select name="adults" class="input" required>
+                    <option value="1">1 adult</option>
+                    <option value="2">2 adults</option>
+                    <option value="3">3 adults</option>
+                    <option value="4">4 adults</option>
+                    <option value="5">5 adults</option>
+                    <option value="6">6 adults</option>
+                 </select>
+              </div>
+              <div class="box">
+                 <p>childs <span>*</span></p>
+                 <select name="child" class="input" required>
+                    <option value="-">0 child</option>
+                    <option value="1">1 child</option>
+                    <option value="2">2 childs</option>
+                    <option value="3">3 childs</option>
+                    <option value="4">4 childs</option>
+                    <option value="5">5 childs</option>
+                    <option value="6">6 childs</option>
+                 </select>
+              </div>
+              <div class="box">
+                 <p>rooms <span>*</span></p>
+                 <select name="rooms" class="input" required>
+                    <option value="1">1 room</option>
+                    <option value="2">2 rooms</option>
+                    <option value="3">3 rooms</option>
+                    <option value="4">4 rooms</option>
+                    <option value="5">5 rooms</option>
+                    <option value="6">6 rooms</option>
+                 </select>
+              </div>
+           </div>
+           <input type="submit" value="check availability" name="check" class="btn">
+        </form>
+     
+     </section>
+     
+     </section>
+
+     <footer class="footer">
+      <section class="footer-container">
+          <section class="row">
+              <section class="footer-col">
+                  <h4>Hotel</h4>
+                  <ul>
+                      <li><a href="#">about us</a></li>
+                      <li><a href="#">our services</a></li>
+                      <li><a href="#">privacy policy</a></li>
+                  </ul>
+              </section>
+              <section class="footer-col">
+                  <h4>get help</h4>
+                  <ul>
+                      <li><a href="#">FAQ</a></li>
+                      <li><a href="#">contact us</a></li>
+                      <li><a href="#">Contact Form</a></li>
+                      <li><a href="#">Live Chat Support</a></li>
+                      <li><a href="#">24/7 Customer service</a></li>
+                  </ul>
+              </section>
+              <section class="footer-col">
+                  <h4>payments</h4>
+                  <ul>
+                      <li><a href="#">Pay at Hotel</a></li>
+                      <li><a href="#">Bank Transfers</a></li>
+                      <li><a href="#">Online Payment Gateways</a></li>
+                  </ul>
+              </section>
+              <section class="footer-col">
+                  <h4>follow us</h4>
+                  <section class="social-links">
+                      <a href="#"><i class="fab fa-facebook-f"></i></a>
+                      <a href="#"><i class="fab fa-twitter"></i></a>
+                      <a href="#"><i class="fab fa-instagram"></i></a>
+                      <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                  </section>
+              </section>
+          </section>
+      </section>
+ </footer>
+</body>
+</html>
