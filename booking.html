@@ -14,104 +14,194 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body >
-    <header class="header">
-        <a href="index.html" class="navlogo">Heritance</a>
+    
+   <header class="header">
+      <a href="index.html" class="navlogo">Heritance</a>
 
-        <input type="checkbox" id="check">
-        <label for="check" class="icons">
-            <i class='bx bx-menu' id="menu-icon"></i>
-            <i class='bx bx-x' id="close-icon"></i>
-        </label>
+      <input type="checkbox" id="check">
+      <label for="check" class="icons">
+          <i class='bx bx-menu' id="menu-icon"></i>
+          <i class='bx bx-x' id="close-icon"></i>
+      </label>
 
-        <nav class="navbar">
-            
-        <a href="index.html" style="--i:0">Home</a>
-        <a href="Accomodation.html" style="--i:1">Accomodation</a>
-        <a href="Adventures.html" style="--i:2">restaurant</a>
-        <a href="Restuarants.html" style="--i:3">Adventures</a>
-        <a href="branches.html" style="--i:4">Branches</a>
-        <a href="booking.html" style="--i:5">Bookings</a>
-        
-        </nav>
-   
-    </header>
+      <nav class="navbar">
+          
+      <a href="index.html" style="--i:0">Home</a>
+      <a href="Accomodation.html" style="--i:1">Accomodation</a>
+      <a href="Restuarants.html" style="--i:2">restaurant</a>
+      <a href="Adventures.html" style="--i:3">Adventures</a>
+      <a href="branches.html" style="--i:4">Branches</a>
+      <a href="booking.html" style="--i:5">Bookings</a>
       
-    <section class="reservation" id="reservation">
+      </nav>
+ 
+  </header>
+  
+    <section class="reservation">
 
-        <form action="" method="post">
-           <h3>make a reservation</h3>
+        <form>
+
+           <h3>Book your stay</h3>
+
            <div class="flex">
+              
+            <div class="box">
+               <label for="name">Name:</label>
+               <input type="text" id="name" name="name" class="input" required>
+             </div>
+             
+             <div class="box">
+               <label for="email">Email:</label>
+               <input type="email" id="email" name="email" class="input" required>
+             </div>
+             
+             <div class="box">
+               <label for="telephone">Telephone No:</label>
+               <input type="tel" id="telephone" name="telephone" class="input" required>
+             </div>
+             
               <div class="box">
-                 <p>check in <span>*</span></p>
-                 <input type="date" name="check_in" class="input" required>
-              </div>
-              <div class="box">
-                 <p>check out <span>*</span></p>
-                 <input type="date" name="check_out" class="input" required>
-              </div>
-              <div class="box">
-                 <p>adults <span>*</span></p>
-                 <select name="adults" class="input" required>
-                    <option value="1">1 adult</option>
-                    <option value="2">2 adults</option>
-                    <option value="3">3 adults</option>
-                    <option value="4">4 adults</option>
-                    <option value="5">5 adults</option>
-                    <option value="6">6 adults</option>
-                 </select>
-              </div>
-              <div class="box">
-                 <p>childs <span>*</span></p>
-                 <select name="child" class="input" required>
-                    <option value="-">0 child</option>
-                    <option value="1">1 child</option>
-                    <option value="2">2 childs</option>
-                    <option value="3">3 childs</option>
-                    <option value="4">4 childs</option>
-                    <option value="5">5 childs</option>
-                    <option value="6">6 childs</option>
-                 </select>
+               <label for="check_in">Check in:</label>
+               <input type="date" id="check_in" name="check_in" class="input" required>
               </div>
 
               <div class="box">
-                <p>rooms <span>*</span></p>
-                <select name="room type" class="input" required>
-                   <option value="1">Pool Beach Villa</option>
-                   <option value="2">Two Bed Room Family Pool Beach Villa</option>
-                   <option value="3">Ocean Suite</option>
-                   <option value="4">Ocean Residence</option>
+               <label for="check_out">Check out:</label>
+               <input type="date" id="check_out" name="check_out" class="input" required>
+              </div>
+
+              <div class="box">
+               <label for="numAdults">Adults:</label>
+               <input type="number" id="numAdults" name="numAdults" min="1" max="20" value="1" class="input" required>
+              </div>
+
+              <div class="box">
+               <label for="numChildren">Children:</label>
+               <input type="number" id="numChildren" name="numChildren" min="0" max="20" value="0" class="input" required>
+              </div>
+
+              <div class="box">
+               <label for="room_type">Room type:</label>
+               <select id="room_type" name="room_type" class="input" required>
+                   <option value="single">Single room</option>
+                   <option value="double">Double room</option>
+                   <option value="triple">Triple room</option>
                 </select>
              </div>
 
               <div class="box">
-                 <p>rooms <span>*</span></p>
-                 <select name="rooms" class="input" required>
-                    <option value="1">1 room</option>
-                    <option value="2">2 rooms</option>
-                    <option value="3">3 rooms</option>
-                    <option value="4">4 rooms</option>
-                    <option value="5">5 rooms</option>
-                    <option value="6">6 rooms</option>
-                 </select>
+               <label for="norooms">No of rooms:</label>
+               <input type="number" id="norooms" name="norooms" min="1" max="10" value="1" class="input" required>
               </div>
+
+              <div class="box">
+               <label for="view">View:</label>
+               <select id="view" name="view" class="input" required>
+                  <option value="none">none</option>
+                  <option value="gardenview">Garden view</option>
+                  <option value="poolview">Pool view</option>
+               </select>
+              </div>
+
+              <div class="box">
+               <label for="wifi">Wifi:</label><br><br>
+               <input type="checkbox" id="wifi" name="wifi" class="a" >
+              </div>
+
+              <div class="box">
+               <label for="duration">Duration of stay(days):</label>
+               <input type="number" id="duration" name="duration" min="1" max="20" value="1" class="input" required>
+              </div>
+              
+              <div class="box">
+               <label for="extrabeds">Extra beds:</label>
+               <input type="number" id="extrabeds" name="extrabeds" min="0" max="3" value="0" class="input" required>
+              </div>
+
+              <div class="box">
+               <label for="promocode">Promo code:</label>
+               <input type="text" id="promocode" name="promocode" class="input">
+              </div>
+
+              <div class="box">
+               <label for="loyaltyPoints">Loyalty Points:</label>
+               <input type="text" id="loyaltyPoints" name="loyaltyPoints" class="input">
+              </div>
+
+
            </div>
-           <input type="submit" value="check availability" name="check" class="btn">
+         
+           <div>
+           <button type="submit" id="booknow" name="booknow">Book now</button>
+           </div> 
+
         </form>
      
      </section>
      
-     </section>
+    <!--Adventure-->
 
-     <footer>
-        <section class="footerlogo"><a href="index.html"><img src="download.jpeg" width="15%" alt="logo"></a></section>
-        <section class="footersocial">
-             <ul class="footsoci">
-                 <li><a href="https://www.instagram.com/heritanceaarah/"><img src="8666638_instagram_icon.png" width="30%" alt="instagram"></a></li>
-                 <li><a href="https://web.facebook.com/heritanceaarahmaldives"><img src="5340250_book_face_facebook_fb_icon.png" width="30%" alt="facebook"></a></li>
-                 <li><a href="https://twitter.com/heritancehotel"><img src="5305172_tweet_twitter_twitter logo_icon.png" width="30%" alt="twitter"></a></li>
-                 <li><a href="https://www.youtube.com/channel/UCXDuhmITXwweZE5R49bCQ-g"><img src="211929_social_youtube_icon.png" width="30%" alt="youtube"></a></li>
-             </ul>
-        </section>
-     </footer>
+     <section class="reservation">
+
+      <form>
+
+         <h3>Adventure booking</h3>
+
+         <div class="flex">
+
+            <div class="box">
+              <label for="adventuretype">Adventure type:</label>
+              <select id="adventuretype" name="adventuretype" class="input" required>
+                 <option value="divingforlocaladults">Diving for local adults(1 hour)</option>
+                 <option value="divingforlocalkids">Diving for local kids(1 hour)</option>
+                 <option value="divingforforeignadults">Diving for foreign adults(1 hour)</option>
+                 <option value="divingforforeignkids">Diving for foreign kids(1 hour)</option>
+              </select>
+           </div>
+
+           <div class="box">
+            <label for="guide">Guide:</label><br><br>
+            <input type="checkbox" id="guide" name="guide" class="a" >
+           </div>
+           
+
+         </div>
+
+         <div>
+            <button type="submit" id="bookadventure" name="bookadventure">Book adventure</button><br><br><br><br><br><br><br><br>
+         </div> 
+
+         <div class="flex">
+           
+            
+           <div class="box">
+            <h2 id="currentbooking" name="currentbooking" class="h">Current Booking</h2>
+           
+            <p  id="currentbookingcost" name="currentbookingcost" class="in">Cost: LKR 0.00</p>
+           </div>
+
+           <div class="box" id="Overall">
+            <h2 id="overallbooking" name="overallbooking" class="h">Overall Booking</h2>
+            
+            <p id="overallbookingcost" name="overallbookingcost" class="in">Total Cost: LKR 0.00</p>
+           </div>
+            
+           <div class="box">
+           <button type="button" id="favorites" name="favorites" onclick="addToFavorites()">Add to Favorites</button>
+           </div>
+
+           <div class="box">
+           <button type="button" id="loyalty" name="loyalty" onclick="checkLoyalty()">Check Loyalty</button>
+           </div>
+
+         </div>
+
+         
+
+      </form>
+   
+      <script src="script.js"></script>
+
+    
 </body>
 </html>

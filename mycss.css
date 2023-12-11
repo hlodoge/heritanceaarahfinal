@@ -361,6 +361,7 @@ justify-content: end;
   margin-bottom:20px
 }
 /*booking page*/
+/*booking page*/
 .reservation form{
   border:2px;
   padding: 2rem;
@@ -388,7 +389,7 @@ justify-content: end;
   flex: 1 1 40rem;
 }
 
-.reservation form .flex .box p{
+.reservation form .flex .box label{
   font-size: 1.8rem;
   color:#000000;
 }
@@ -403,10 +404,69 @@ justify-content: end;
   width: 100%;
 }
 
-.reservation form .flex .box input[type="date"]::-webkit-calendar-picker-indicator{
-  filter: invert(1);
+.reservation form .flex .box .a{
+  height: 50px;
+  width: 50px;
 }
 
+.btn {
+  font-size: 25px;
+  margin-top: 2%;
+}
+
+.reservation form .flex .box .h{
+  padding: 1rem 0;
+  margin: 1rem 0;
+  color:#000000;
+  font-size: 1.8rem;
+  width: 100%;
+}
+
+.reservation form .flex .box .in{
+  padding: 1rem 0;
+  margin: 1rem 0;
+  border-bottom:#000000;
+  border-radius: 8px;
+  background:rgb(189, 186, 186);
+  color:#202020;
+  font-size: 1.8rem;
+  width: 100%;
+}
+
+.reservation form .flex .box label {
+  font-size: 1.8rem;
+  color: #000000;
+}
+
+.reservation form .flex .box .input {
+  padding: 1rem 0;
+  margin: 1rem 0;
+  border-bottom: #000000;
+  background: rgb(119, 116, 116);
+  color: #fff;
+  font-size: 1.8rem;
+  width: 100%;
+}
+
+
+
+button {
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  width:300px;
+  height: 40px;
+  font-size: 20px;
+  
+}
+
+button:hover {
+  background-color: #2980b9;
+}
 
 
 /*Branches*/
