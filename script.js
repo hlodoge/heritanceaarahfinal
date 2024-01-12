@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function () {
+
   const isPageRefreshed = sessionStorage.getItem("isPageRefreshed");
 
   if (!isPageRefreshed || isPageRefreshed === "false") {
@@ -174,4 +174,4 @@ document.addEventListener("DOMContentLoaded", function () {
 
     alert(`You have earned ${loyaltyPoints} loyalty points!`);
   }
-});
+;
